@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #07110d !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    color: white !important;
+}
+
+.games-container {
+    padding: 70px 0 !important;
+}
+
+.game-card {
+    position: relative !important;
+    padding: 120px 40px 45px !important;
+    border: 3px solid !important;
+    border-radius: 20px !important;
+    background: #091712 !important;
+    transition: .4s !important;
+}
+
+.game-card:hover {
+    transform: translateY(-8px) !important;
+}
+
+.game-logo {
+    left: 50% !important;
+    top: -95px !important;
+    transform: translateX(-50%) !important;
+}
+
+.game-logo img {
+    width: 190px !important;
+    height: 190px !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+    border: 5px solid !important;
+    background: #111 !important;
+}
+
+.description-box {
+    width: 85% !important;
+    margin: 0 auto 45px !important;
+    padding: 28px 55px !important;
+    clip-path: polygon(6% 0, 94% 0, 100% 50%, 94% 100%, 6% 100%, 0 50%) !important;
+    border: 3px solid !important;
+    background: #0b1813 !important;
+}
+
+.description-box p {
+    text-align: center !important;
+    line-height: 1.8 !important;
+    font-size: 1.15rem !important;
+}
+
+.screenshots img {
+    height: 250px !important;
+    object-fit: cover !important;
+    border-radius: 10px !important;
+    border: 2px solid !important;
+    transition: .35s !important;
+}
+
+.screenshots img:hover {
+    transform: scale(1.04) !important;
+    filter: brightness(1.15) !important;
+    cursor: pointer !important;
+}
+
+.green { border-color: #25ffc3 !important; box-shadow: 0 0 12px #25ffc3 !important; }
+.green .game-logo img, .green .description-box, .green .screenshots img { border-color: #25ffc3 !important; }
+.green .description-box { box-shadow: 0 0 12px #25ffc3 !important; }
+
+.purple { border-color: #a855ff !important; box-shadow: 0 0 12px #a855ff !important; }
+.purple .game-logo img, .purple .description-box, .purple .screenshots img { border-color: #a855ff !important; }
+.purple .description-box { box-shadow: 0 0 12px #a855ff !important; }
+
+.orange { border-color: #ff9330 !important; box-shadow: 0 0 12px #ff9330 !important; }
+.orange .game-logo img, .orange .description-box, .orange .screenshots img { border-color: #ff9330 !important; }
+.orange .description-box { box-shadow: 0 0 12px #ff9330 !important; }
+
+.red { border-color: #ff0000 !important; box-shadow: 0 0 12px #ff0000 !important; }
+.red .game-logo img, .red .description-box, .red .screenshots img { border-color: #ff0000 !important; }
+.red .description-box { box-shadow: 0 0 12px #ff0000 !important; }
+
+.side-nav {
+    position: fixed !important;
+    top: 50% !important;
+    left: 0 !important;
+    transform: translateY(-50%) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 15px !important;
+    padding: 10px !important;
+    z-index: 9999 !important;
+}
+
+.nav-btn {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 65px !important;
+    height: 65px !important;
+    background: #111 !important;
+    color: #fff !important;
+    text-decoration: none !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    transition: 0.3s !important;
+    border-radius: 0 8px 8px 0 !important;
+}
+
+.nav-btn:hover {
+    filter: brightness(1.15) !important;
+    transform: translateX(5px) !important;
+}
+
+.green { border: 3px solid #25ffc3 !important; box-shadow: 0 0 12px #25ffc3 !important; }
+.purple { border: 3px solid #a855ff !important; box-shadow: 0 0 12px #a855ff !important; }
+.orange { border: 3px solid #ff9330 !important; box-shadow: 0 0 12px #ff9330 !important; }
+.red { border: 3px solid #ff0000 !important; box-shadow: 0 0 12px #ff0000 !important; }
+
+@media (max-width: 900px) {
+    .screenshots .col-md-4 { width: 100% !important; }
+    .description-box { width: 100% !important; clip-path: none !important; border-radius: 12px !important; padding: 25px !important; }
+    .game-logo img { width: 150px !important; height: 150px !important; }
+    .game-card { padding-top: 100px !important; }
+    .side-nav {
+        top: auto !important;
+        bottom: 20px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        flex-direction: row !important;
+        gap: 10px !important;
+    }
+    .nav-btn {
+        width: 55px !important;
+        height: 55px !important;
+        font-size: 10px !important;
+        border-radius: 8px !important;
+    }
+}
