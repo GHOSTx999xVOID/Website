@@ -39,7 +39,6 @@ header {
 
 .about-text { font-weight: bold !important; font-size: 18px; line-height: 1.6; color: #d1d1d1 !important; }
 
-/* SIDE NAVIGATION */
 .side-nav {
     position: fixed !important; top: 50% !important; left: 0 !important;
     transform: translateY(-50%) !important; display: flex !important;
@@ -59,7 +58,6 @@ header {
 .orange { border: 3px solid #ff9330 !important; box-shadow: 0 0 12px #ff9330 !important; }
 .red { border: 3px solid #ff0000 !important; box-shadow: 0 0 12px #ff0000 !important; }
 
-/* BACK TO TOP */
 .back-to-top {
     position: fixed; bottom: 30px; right: 30px; display: none;
     width: 50px; height: 50px; background: #c40000; color: white;
@@ -68,11 +66,9 @@ header {
 }
 .back-to-top:hover { background: #ff0000; transform: scale(1.1); }
 
-/* FADE IN ANIMATION */
 .name-section, .featured-section, .about-text { opacity: 0; transform: translateY(40px); transition: all 0.8s ease-out; }
 .fade-in { opacity: 1 !important; transform: translateY(0) !important; }
 
-/* MOBILE */
 @media (max-width: 768px) {
     .side-nav.mobile-active {
         top: 80px !important; bottom: auto !important; left: 0 !important;
